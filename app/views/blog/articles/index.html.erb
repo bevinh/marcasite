@@ -1,14 +1,30 @@
 <p style="color: green"><%= notice %></p>
+<div class="head">
+    <div>
+        <div class="weatherforcastbox">
+          <span style="font-style: italic;">
+            Weather forecast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span>
+          </div>
+        <header>Articles</header>
+        <%= link_to "New article", new_article_path %>
+        <%= link_to "Settings", "/blog/settings" %>
+    </div>
 
-<h1>Articles</h1>
-
-<div id="articles">
-  <% @articles.each do |article| %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
+    <div class="subhead"></div>
 </div>
+<div class="content" id="articles">
+    <div class="columns">
+        
 
-<%= link_to "New article", new_article_path %>
+          <% @articles.each do |article| %>
+          <div class="column">
+            <div class="head">
+            <h2><%= link_to article.title, article %></h2>
+            </div>
+            <%= article.text.truncate(200).html_safe %>
+             </div>
+          <% end %>
+       
+      </div>
+    </div>
+
