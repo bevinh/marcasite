@@ -1,4 +1,4 @@
-module Blog
+module Marcasite
   class ApplicationRecord < ActiveRecord::Base
     self.abstract_class = true
   end

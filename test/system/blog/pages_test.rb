@@ -1,9 +1,9 @@
 require "application_system_test_case"
 
-module Blog
+module Marcasite
   class PagesTest < ApplicationSystemTestCase
     setup do
-      @page = blog_pages(:one)
+      @page = marcasite_pages(:one)
     end
 
     test "visiting the index" do

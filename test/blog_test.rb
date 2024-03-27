@@ -1,7 +1,7 @@
 require "test_helper"
 
-class BlogTest < ActiveSupport::TestCase
+class MarcasiteTest < ActiveSupport::TestCase
   test "it has a version number" do
-    assert Blog::VERSION
+    assert Marcasite::VERSION
   end
 end

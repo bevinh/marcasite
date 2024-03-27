@@ -1,6 +1,6 @@
-class CreateBlogPages < ActiveRecord::Migration[7.1]
+class CreateMarcasitePages < ActiveRecord::Migration[7.1]
   def change
-    create_table :blog_pages do |t|
+    create_table :marcasite_pages do |t|
       t.string :title
       t.text :text
       t.string :slug

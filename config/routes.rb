@@ -1,4 +1,4 @@
-Blog::Engine.routes.draw do
+Marcasite::Engine.routes.draw do
   resources :pages
   resources :articles do
     resources :comments

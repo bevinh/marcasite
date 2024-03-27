@@ -1,11 +1,11 @@
 require "test_helper"
 
-module Blog
+module Marcasite
   class PagesControllerTest < ActionDispatch::IntegrationTest
     include Engine.routes.url_helpers
 
     setup do
-      @page = blog_pages(:one)
+      @page = marcasite_pages(:one)
     end
 
     test "should get index" do

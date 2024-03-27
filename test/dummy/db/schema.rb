@@ -11,30 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_03_27_121929) do
-  create_table "blog_articles", force: :cascade do |t|
-    t.string "title"
-    t.string "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "slug"
-    t.index ["slug"], name: "index_blog_articles_on_slug", unique: true
-  end
-
-  create_table "blog_comments", force: :cascade do |t|
-    t.integer "article_id"
-    t.text "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "blog_pages", force: :cascade do |t|
-    t.string "title"
-    t.text "text"
-    t.string "slug"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -46,9 +22,33 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_27_121929) do
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
   end
 
+  create_table "marcasite_articles", force: :cascade do |t|
+    t.string "title"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_marcasite_articles_on_slug", unique: true
+  end
+
+  create_table "marcasite_comments", force: :cascade do |t|
+    t.integer "article_id"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "marcasite_pages", force: :cascade do |t|
+    t.string "title"
+    t.text "text"
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "settings", force: :cascade do |t|
-    t.string "blog_name"
-    t.string "blog_description"
+    t.string "marcasite_name"
+    t.string "marcasite_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

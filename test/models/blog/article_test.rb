@@ -1,6 +1,6 @@
 require "test_helper"
 
-module Blog
+module Marcasite
   class ArticleTest < ActiveSupport::TestCase
     # test "the truth" do
     #   assert true

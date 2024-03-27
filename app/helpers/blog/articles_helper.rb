@@ -1,4 +1,4 @@
-module Blog
+module Marcasite
   module ArticlesHelper
   end
 end

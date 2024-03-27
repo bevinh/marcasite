@@ -1,13 +1,13 @@
-require_relative "lib/blog/version"
+require_relative "lib/marcasite/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "blog"
-  spec.version     = Blog::VERSION
+  spec.name        = "marcasite"
+  spec.version     = Marcasite::VERSION
   spec.authors     = ["bevin_hernandez"]
   spec.email       = ["bevin.hernandez@gmail.com"]
   spec.homepage    = "http://www.cognitive-foundry.com"
-  spec.summary     = "Blog Engine"
-  spec.description = "A quick and dirty blog engine for Rails"
+  spec.summary     = "Marcasite Engine"
+  spec.description = "A website builder for Rails"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"

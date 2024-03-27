@@ -1,4 +1,4 @@
-module Blog
+module Marcasite
   class AdminController < ApplicationController
     def index
       @panel = view_context.render(partial: 'general')

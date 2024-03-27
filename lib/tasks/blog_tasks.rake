@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :blog do
+# task :marcasite do
 #   # Task goes here
 # end
