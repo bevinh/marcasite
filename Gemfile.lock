@@ -195,8 +195,8 @@ PLATFORMS
   x86_64-darwin
 
 DEPENDENCIES
+  friendly_id (~> 5.5.1)
   marcasite!
-  friendly_id
   puma
   sprockets-rails
   sqlite3
