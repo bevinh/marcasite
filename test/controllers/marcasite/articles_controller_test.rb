@@ -38,7 +38,7 @@ module Marcasite
 
     test "should update article" do
       patch article_url(@article), params: { article: { text: @article.text, title: @article.title } }
-      assert_redirected_to article_url(@article)
+      assert_redirected_to article_url(id: @article.title.to_param.downcase)
     end
 
     test "should destroy article" do
