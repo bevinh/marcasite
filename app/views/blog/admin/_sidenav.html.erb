@@ -10,7 +10,7 @@
           <span class="link_name">Dashboard</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">General</a></li>
+          <li><%= link_to "General", general_admin_path, class: "link_name" %></li>
         </ul>
       </li>
       <li>
@@ -37,10 +37,7 @@
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Login Form</a></li>
-          <li><a href="#">Card Design</a></li>
+          <%= link_to "Posts", post_admin_path, class: "link_name" %>
         </ul>
       </li>
       <li>
