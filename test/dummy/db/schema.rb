@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_27_121929) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_27_132808) do
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -42,6 +42,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_27_121929) do
     t.string "title"
     t.text "text"
     t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "marcasite_themes", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.text "css"
+    t.boolean "modifiable"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

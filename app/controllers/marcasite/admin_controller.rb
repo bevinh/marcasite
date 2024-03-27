@@ -1,5 +1,6 @@
 module Marcasite
   class AdminController < ApplicationController
+    layout 'marcasite/admin'
     def index
       @panel = view_context.render(partial: 'general')
     end
@@ -23,6 +24,11 @@ module Marcasite
     end
     def plugins
       @panel = view_context.render(partial: 'plugins')
+      render 'index'
+    end
+    def themes
+      @themes = Theme.all
+      @panel = view_context.render(partial: 'themes')
       render 'index'
     end
   end

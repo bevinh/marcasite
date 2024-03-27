@@ -1,4 +1,5 @@
 Marcasite::Engine.routes.draw do
+  resources :themes
   resources :pages
   resources :articles do
     resources :comments
@@ -12,5 +13,6 @@ Marcasite::Engine.routes.draw do
     get 'pages', to: 'admin#pages', as: :page_admin
     get 'analytics',  to: 'admin#analytics', as: :analytics_admin
     get 'plugins', to: 'admin#plugins', as: :plugins_admin
+    get 'themes', to: 'admin#themes', as: :themes_admin
   end
 end
