@@ -1,10 +1,15 @@
 # Marcasite
-Short description and motivation.
+
+Marcasite is a gem built for small companies who want their marketing site to be a part of their main app. Often they have only one person doing development/technical work, and if they are writing a web app, it's in Rails.
+
+Marcasite will have features similar to Wordpress, but built in Rails so that it can be easily extended.
 
 ## Usage
-How to use my plugin.
+
+DO NOT USE THIS YET - it's under active development and is not ready for prime time.
 
 ## Installation
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -12,17 +17,17 @@ gem "marcasite"
 ```
 
 And then execute:
-```bash
+
+```
 $ bundle
 ```
 
 Or install it yourself as:
-```bash
+
+```
 $ gem install marcasite
 ```
 
-## Contributing
-Contribution directions go here.
-
 ## License
+
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
