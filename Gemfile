@@ -10,6 +10,6 @@ gem "sqlite3"
 
 gem "sprockets-rails"
 
-gem "friendly_id"
+gem "friendly_id", "~> 5.2.4"
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"
