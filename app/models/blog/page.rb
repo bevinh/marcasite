@@ -1,6 +1,5 @@
 module Blog
-  class Article < ApplicationRecord
-    has_many :comments
+  class Page < ApplicationRecord
     extend FriendlyId
     friendly_id :title, use: :slugged
   end
